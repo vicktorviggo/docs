@@ -7,9 +7,9 @@ const config: DocsThemeConfig = {
     link: 'https://github.com/mycroft-studios',
   },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://discord.gg/TCCHMySN2N',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/mycroft-studios/docs',
   footer: {
     text: 'Copyright Mycroft (2023) - Dedicated To Excellence.',
   },
