@@ -1,0 +1,43 @@
+import { Callout } from "nextra/components";
+import DataTable from "components/table";
+
+# Game Builds
+
+## What Are they?
+
+The Game Build, is the version of the game you are running, often defined as the DLC version.
+Using these allows you to unlock certain parts of GTA, such as Vehicles, clothings and native functions.
+
+<Callout type="info">
+  For more info on this topic, Visit the [Cfx.re Docs](https://docs.fivem.net/docs/server-manual/server-commands/)
+</Callout>
+
+## Setting Game Build
+
+To set the game build your server uses, find the number that matches the DLC you want, from the lists below.
+\nThen You will want to native to your `server.cfg` (or use the `CFG Editor` inside txAdmin) and insert the following:
+
+> Note: Insert without the `<>`
+
+```cfg
+set sv_enforcegameBuild <number>
+```
+
+## Build Numbers
+
+### FiveM
+
+{<DataTable rows = {[
+  {DLC: 'San Andreas Mercenaries', Number: 2944 },
+  {DLC: 'Los Santos Drug Wars', Number: 2802 },
+  {DLC: 'he Criminal Enterprises', Number: 2699 },
+  {DLC: 'The Contract', Number: 2545 },
+  {DLC: "Los Santos Tuners", Number: 2372 },
+  {DLC: 'Cayo Perico Heist', Number: 2189 },
+  {DLC: 'Los Santos Summer Special', Number: 2060 },
+  {DLC: 'Arena War', Number: 1604 },
+]} head = {[
+ "Number",
+ "DLC Name",
+]}/>}
+
