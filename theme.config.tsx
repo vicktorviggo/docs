@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discord.gg/TCCHMySN2N',
   },
-  docsRepositoryBase: 'https://github.com/mycroft-studios/docs',
+  docsRepositoryBase: 'https://github.com/mycroft-studios/docs/blob/main',
   footer: {
     text: 'Copyright Mycroft (2023) - Dedicated To Excellence.',
   },
