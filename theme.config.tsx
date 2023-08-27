@@ -11,7 +11,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'Dedicated To Excellence.',
+    text: 'Copyright Mycroft (2023) - Dedicated To Excellence.',
   },
 }
 

@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "mycroft",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Mycroft Studios Documentation For All Cfx.re related tasks.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,12 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/shuding/nextra-docs-template.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Mycroft, Shu Ding <g@shud.in>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/mycroft-studios/docs"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://docs-gamma.vercel.app",
   "dependencies": {
     "next": "^13.0.6",
     "nextra": "latest",
