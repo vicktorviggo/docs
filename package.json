@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/mycroft-studios/docs/issues/"
   },
-  "homepage": "https://docs-gamma.vercel.app",
+  "homepage": "https://www.mycroft-studios.co.uk/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

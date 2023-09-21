@@ -1,4 +1,5 @@
 import { Callout } from "nextra/components";
+import DefinitionText from "../../components/definitionText"
 import DataTable from "components/table";
 
 # Game Builds
@@ -16,7 +17,7 @@ Using this allows you to unlock certain parts of GTA, such as Vehicles, clothing
 
 To set the game build your server uses, find the number that matches the DLC you want, from the lists below.
 
-You will Then want to navigate to your `server.cfg` (or use the `CFG Editor` inside txAdmin) and insert the following:
+You will Then want to navigate to your <DefinitionText text={"server.cfg"}/> (or use the <DefinitionText text={"CFG Editor"}/>) and insert the following:
 
 ```cfg
 sv_enforceGameBuild <number>
