@@ -29,6 +29,7 @@ const Definitions = {
     "ESX Legacy": "The most popular FiveM RP framework, containing Jobs, Housing, Vehicles & more!",
     "Cfx Default": "The base resources required to run a minimal server.",
     "VORP Core": "The leading RP Framework for RedM containing various jobs, stables, hunting, housing & more!",
+    "Definition Tooltips": "This is a tooltip that explains what a word means.",
 };
 
 
