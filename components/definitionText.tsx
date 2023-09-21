@@ -35,7 +35,7 @@ const Definitions = {
 const DefinitionText: React.FC<definitionTextProps> = ({text}) => {
     const definition = Definitions[text];
     return (
-        <Tooltip title={definition} >
+        <Tooltip title={definition} arrow>
             <b style={{color: blue[300]}}>{text}</b>
         </Tooltip>
     );
