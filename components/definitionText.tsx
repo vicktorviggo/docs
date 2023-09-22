@@ -30,6 +30,8 @@ const Definitions = {
     "Cfx Default": "The base resources required to run a minimal server.",
     "VORP Core": "The leading RP Framework for RedM containing various jobs, stables, hunting, housing & more!",
     "Definition Tooltips": "This is a tooltip that explains what a word means.",
+    "Patreon": "A membership platform that provides business tools for content creators to run a subscription service.",
+    "APNG": "A file format for animated images that is similar to GIF.",
 };
 
 
