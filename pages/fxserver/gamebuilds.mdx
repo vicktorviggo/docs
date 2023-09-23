@@ -1,6 +1,7 @@
 import { Callout } from "nextra/components";
 import DefinitionText from "../../components/definitionText"
 import Table from "components/table";
+import { MantineProvider, rem } from '@mantine/core';
 
 # Game Builds
 
@@ -24,33 +25,55 @@ sv_enforceGameBuild <number>
 ```
 > Note: Insert without the `<>`
 
-## Build Numbers
+<MantineProvider theme={{
+    fontSizes: {
+        sm: rem(16),
+    },
+    colorScheme: 'dark',
+    colors: {
+        // override dark colors here to change them for all components
+        dark: [
+            '#d5d7e0',
+            '#acaebf',
+            '#8c8fa3',
+            '#666980',
+            '#4d4f66',
+            '#292929',
+            '#292929',
+            '#111111',
+            '#0c0d21',
+            '#01010a',
+        ],
+    },
+}}>
+    ## Build Numbers
 
-### FiveM
+    ### FiveM
 
-<Table rows = {[
-  {DLC: 'San Andreas Mercenaries', Number: 2944 },
-  {DLC: 'Los Santos Drug Wars', Number: 2802 },
-  {DLC: 'The Criminal Enterprises', Number: 2699 },
-  {DLC: 'The Contract', Number: 2545 },
-  {DLC: "Los Santos Tuners", Number: 2372 },
-  {DLC: 'Cayo Perico Heist', Number: 2189 },
-  {DLC: 'Los Santos Summer Special', Number: 2060 },
-  {DLC: 'Arena War', Number: 1604 },
-]} head = {[
- {accessor: 'Number', width: "10%" },
- {accessor: 'DLC', width: "60%", title: 'DLC Name'},
-]}/>
+    <Table rows = {[
+      {DLC: 'San Andreas Mercenaries', Number: 2944 },
+      {DLC: 'Los Santos Drug Wars', Number: 2802 },
+      {DLC: 'The Criminal Enterprises', Number: 2699 },
+      {DLC: 'The Contract', Number: 2545 },
+      {DLC: "Los Santos Tuners", Number: 2372 },
+      {DLC: 'Cayo Perico Heist', Number: 2189 },
+      {DLC: 'Los Santos Summer Special', Number: 2060 },
+      {DLC: 'Arena War', Number: 1604 },
+    ]} head = {[
+     {accessor: 'Number', width: "10%" },
+     {accessor: 'DLC', width: "60%", title: 'DLC Name'},
+    ]}/>
 
-### RedM
+    ### RedM
 
-<Table rows = {[
-    {DLC: 'September 2022 update.', Number: 1491 },
-    {DLC: 'July 2021 update - Blood Money DLC.', Number: 2802 },
-    {DLC: 'December 2020 update', Number: 1355 },
-    {DLC: 'Mid 2020 update', Number: 1311 },
-]} head = {[
-    {accessor: 'Number', width: "10%" },
-    {accessor: 'DLC', width: "60%", title: 'Notes/DLC Name'},
-]}/>
+    <Table rows = {[
+        {DLC: 'September 2022 update.', Number: 1491 },
+        {DLC: 'July 2021 update - Blood Money DLC.', Number: 2802 },
+        {DLC: 'December 2020 update', Number: 1355 },
+        {DLC: 'Mid 2020 update', Number: 1311 },
+    ]} head = {[
+        {accessor: 'Number', width: "10%" },
+        {accessor: 'DLC', width: "60%", title: 'Notes/DLC Name'},
+    ]}/>
+</MantineProvider>
 
