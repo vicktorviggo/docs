@@ -1,6 +1,6 @@
 import { Callout } from "nextra/components";
 import DefinitionText from "../../components/definitionText"
-import DataTable from "components/table";
+import Table from "components/table";
 
 # Game Builds
 
@@ -28,7 +28,7 @@ sv_enforceGameBuild <number>
 
 ### FiveM
 
-<DataTable rows = {[
+<Table rows = {[
   {DLC: 'San Andreas Mercenaries', Number: 2944 },
   {DLC: 'Los Santos Drug Wars', Number: 2802 },
   {DLC: 'The Criminal Enterprises', Number: 2699 },
@@ -38,7 +38,19 @@ sv_enforceGameBuild <number>
   {DLC: 'Los Santos Summer Special', Number: 2060 },
   {DLC: 'Arena War', Number: 1604 },
 ]} head = {[
- {name: "Number", align: "inherit"},
- {name:"DLC Name", align: "right"},
+ {accessor: 'Number', width: "10%" },
+ {accessor: 'DLC', width: "60%", title: 'DLC Name'},
+]}/>
+
+### RedM
+
+<Table rows = {[
+    {DLC: 'September 2022 update.', Number: 1491 },
+    {DLC: 'July 2021 update - Blood Money DLC.', Number: 2802 },
+    {DLC: 'December 2020 update', Number: 1355 },
+    {DLC: 'Mid 2020 update', Number: 1311 },
+]} head = {[
+    {accessor: 'Number', width: "10%" },
+    {accessor: 'DLC', width: "60%", title: 'Notes/DLC Name'},
 ]}/>
 
