@@ -7,12 +7,15 @@ import { MantineProvider, rem } from '@mantine/core';
 
 ## What Are they?
 
-The Game Build, is the version of the game you are running, often defined as the DLC version.
-Using this allows you to unlock certain parts of GTA, such as Vehicles, clothing and native functions.
-
-<Callout type="info">
-  For more info on this topic, Visit the [Cfx.re Docs](https://docs.fivem.net/docs/server-manual/server-commands/)
-</Callout>
+The `Game Build`, is the version of the game you are running, often defined as the `DLC version`.
+Using this allows you to unlock and use certain parts of `GTA 5`/ `Red Dead Redemption`. These parts include, but are not limited to:
+- Vehicles
+- Weapons
+- Peds
+- Objects
+- Clothing
+- Animations
+- Interiors (MLOs)
 
 ## Setting Game Build
 
@@ -51,17 +54,20 @@ sv_enforceGameBuild <number>
     ### FiveM
 
     <Table rows = {[
-      {DLC: 'San Andreas Mercenaries', Number: 2944 },
-      {DLC: 'Los Santos Drug Wars', Number: 2802 },
-      {DLC: 'The Criminal Enterprises', Number: 2699 },
-      {DLC: 'The Contract', Number: 2545 },
-      {DLC: "Los Santos Tuners", Number: 2372 },
-      {DLC: 'Cayo Perico Heist', Number: 2189 },
-      {DLC: 'Los Santos Summer Special', Number: 2060 },
-      {DLC: 'Arena War', Number: 1604 },
+      {DLC: 'San Andreas Mercenaries', Number: 2944, info: "https://forge.plebmasters.de/dlcs?name=mp2023_01"},
+      {DLC: 'Los Santos Drug Wars', Number: 2802, info: "https://forge.plebmasters.de/dlcs?name=mpchristmas3"},
+      {DLC: 'The Criminal Enterprises', Number: 2699, info: "https://forge.plebmasters.de/dlcs?name=mpsum2"},
+      {DLC: 'The Contract', Number: 2545, info: "https://forge.plebmasters.de/dlcs?name=mpsecurity"},
+      {DLC: "Los Santos Tuners", Number: 2372, info: "https://forge.plebmasters.de/dlcs?name=mpsecurity"},
+      {DLC: 'Cayo Perico Heist', Number: 2189, info: "https://forge.plebmasters.de/dlcs?name=mptuner"},
+      {DLC: 'Los Santos Summer Special', Number: 2060, info: "https://forge.plebmasters.de/dlcs?name=mpheist4"},
+      {DLC: 'Arena War', Number: 1604, info: "https://forge.plebmasters.de/dlcs?name=mpchristmas2018"},
     ]} head = {[
-     {accessor: 'Number', width: "10%" },
-     {accessor: 'DLC', width: "60%", title: 'DLC Name'},
+     {accessor: 'Number', width: "20%" },
+     {accessor: 'DLC', width: "55%", title: 'DLC Name'},
+        {accessor: 'info', title: 'Information', render: ({ info }) => (
+               <a href={info} target="_blank" rel="noopener noreferrer">More Info</a>
+            ),},
     ]}/>
 
     ### RedM

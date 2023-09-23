@@ -19,11 +19,12 @@ const Table: React.FC<DialogTabProps> = ({
                 <DataTable
                     withBorder={false}
                     fontSize="sm"
+                    shadow="xl"
                     borderRadius="sm"
                     withColumnBorders
                     highlightOnHover
                     records={rows}
-                    sx={{maxWidth: "50%",marginTop:5, zIndex: 10000, maxHeight: "25%", overflow: "auto"}}
+                    sx={{maxWidth: "60%",marginTop:5, zIndex: 10000, maxHeight: "25%", overflow: "auto"}}
                     columns={head}
                 />
         </div>
