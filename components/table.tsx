@@ -38,6 +38,8 @@ const Table: React.FC<DialogTabProps> = ({
             },
             }}>
             <DataTable
+                withBorder={false}
+                fontSize="sm"
                 borderRadius="sm"
                 withColumnBorders
                 highlightOnHover
