@@ -5,13 +5,13 @@ import { useRouter } from 'next/router';
 function useHead() {
   const { asPath } = useRouter();
   const { frontMatter, title } = useConfig();
-  const url = `https://docs-gamma.vercel.app${asPath}`;
-  const description = frontMatter.description || "Mycroft Studios' Documentation For All Cfx.re related tasks.";
+  const url = `https://mycroft-studios.co.uk${asPath}`;
+  const description = frontMatter.description || "Mycroft Studios Documentation";
 
   return (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/x-icon" href="/static/ox.ico" />
+      <link rel="icon" type="image/png" href="/static/logo_white_small.png" />
       <meta httpEquiv="Content-Language" content="en" />
       <meta name="description" content={description} />
       <meta name="og:title" content={title} />
@@ -37,7 +37,19 @@ function useNextSeoProps() {
 
 
 const config: DocsThemeConfig = {
-  logo: <span>Mycroft Studios</span>,
+    logo: (
+        <div
+      style={{
+          paddingLeft: '50px',
+          lineHeight: '38px',
+          background: "url('./static/logo_white_small.png') no-repeat left",
+          backgroundSize: '64px',
+          fontWeight: 550,
+      }}
+     >
+      <p style={{marginLeft: "20px"}}> Mycroft Studios</p>
+    </div>
+    ),
   project: {
     link: 'https://github.com/mycroft-studios',
   },
@@ -47,7 +59,7 @@ const config: DocsThemeConfig = {
   head: useHead,
   docsRepositoryBase: 'https://github.com/mycroft-studios/docs/blob/main',
   footer: {
-    text: 'Copyright Mycroft (2023) - Dedicated To Excellence.',
+    text: 'Mycroft Studios - Dedicated To Excellence.',
   },
   useNextSeoProps: useNextSeoProps,
 }
