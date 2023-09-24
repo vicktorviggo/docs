@@ -22,15 +22,17 @@ function useHead() {
 }
 
 function useNextSeoProps() {
-  const { asPath } = useRouter();
-  const arr = asPath.replace(/[-_]/g, ' ').split('/');
-  const category = (arr[1][0] !== '#' && arr[1]) || 'Overextended';
-  const rawTitle = arr[arr.length - 1];
-  const title = /[a-z]/.test(rawTitle) && /[A-Z]/.test(rawTitle) ? rawTitle : '%s';
+    const { asPath } = useRouter();
+    const arr = asPath.replace(/[-_]/g, ' ').split('/');
+    const category = (arr[1][0] !== '#' && arr[1]) || 'Mycroft Studios';
+    const rawTitle = arr[arr.length - 1];
+    const title = /[a-z]/.test(rawTitle) && /[A-Z]/.test(rawTitle) ? rawTitle : '%s';
 
-  return {
-    titleTemplate: `${title} - Mycroft Studios`,
-  };
+    return {
+        titleTemplate: `${title} - ${
+            rawTitle === category ? 'Documentation' : category.replace(/(^\w|\s\w)/g, (m) => m.toUpperCase())
+        }`,
+    };
 }
 
 
