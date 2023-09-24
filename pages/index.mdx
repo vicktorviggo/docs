@@ -1,6 +1,8 @@
-import { Cards, Card } from 'nextra/components'
+import {Cards, Card} from 'nextra/components'
 import DownloadIcon from '@mui/icons-material/Download';
 import UpgradeIcon from '@mui/icons-material/Upgrade';
+import DnsIcon from '@mui/icons-material/Dns';
+import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import DefinitionText from "../components/definitionText";
 import LinkButton from "../components/link_button";
 
@@ -16,9 +18,9 @@ Want to know more about me? Visit my [About](./about) Page!
 ## Guide overview
 
 Our guides are split into 3 main categories, which are:
-    - FiveM
-    - RedM
-    - FXserver
+- FiveM
+- RedM
+- FXserver
 
 The guides also contain custom elements that are used to display information in a more user-friendly way.
 These elements are:
@@ -26,11 +28,14 @@ These elements are:
 - <DefinitionText text={"Definition Tooltips"}/> (used to show definitions of certain words)
 - <LinkButton text={"Image Buttons"} image={"https://i.imgur.com/FxjGmov.png"}/> (used to show images in a user-friendly way)
 
+
 ## Useful guides
 
 Some useful guides you might want to check out!
 
 <Cards>
-  <Card icon={<DownloadIcon />} title="Server Creation" href="/fxserver" />
-  <Card icon={<UpgradeIcon />} title="Game Builds" href="/fxserver/gamebuilds" />
+    <Card icon={<DownloadIcon/>} title="Server Creation" href="/fxserver"/>
+    <Card icon={<DnsIcon/>} title="MySQL Servers" href="/fxserver/mysql_server"/>
+    <Card icon={<UpgradeIcon/>} title="Game Builds" href="/fxserver/gamebuilds"/>
+    <Card icon={<VpnKeyIcon/>} title="Patreon Keys Explained" href="/fxserver/patreon"/>
 </Cards>
